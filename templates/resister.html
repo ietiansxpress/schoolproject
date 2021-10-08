@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistration page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/resister.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+  <main>
+    <div class="logo"><h1 class="animated infinite zoomInUp">COLLEGE COMPITION</h1></div>
+    <div class="menu">
+        <a href="/home">HOME</a>
+        <a href="/resister">RESISTER</a>
+        <a href="/gallery">GALLERY</a> 
+        <a href="/ourteam">OUR TEAM</a>
+    </div>
+</main>
+<div class="team">
+  <form action="/resister" method="POST">
+    {% csrf_token %}
+    <form class="set">
+        <div class="arr">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" value="" required>
+        </div>
+       
+       
+        <div class="arr">
+          <label for="City" class="form-label">School Address</label>
+          <input type="text" class="form-control" id="School" name="school" required>
+        </div>
+        
+        <div class="arr">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="phone" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="arr">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="arr">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+main{
+    width: 100%; height: 10vh;
+    background-color: rgba(0,0,0, 0.5);
+    color: white;display: flex; justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 1px;
+}
+main .logo{
+    width: 45%; text-align: center;
+    align-items: center;
+}
+main .menu{
+    width: 30%;
+    display: flex; justify-content: space-around;align-items: center;
+}
+main .menu a{
+    width: 35; text-decoration: none; color: white;font-weight: bold;
+    
+}
+main .menu a:hover{
+    color: violet;
+
+}
+.team{
+background: rgb(245, 246, 247);
+width: 390px;
+height: 50vh;
+align-items: center;
+margin-top: 20px;
+margin-left: 580px;
+}
+.team .arr{
+    color: rgb(12, 0, 3);
+    display: flex;
+    align-items: center;
+    
+}
+.set{
+    color: darkturquoise;
+}
