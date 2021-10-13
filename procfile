@@ -1,1 +1,1 @@
-web: gunicorn app:club
+web: gunicorn website.wsgi:application
